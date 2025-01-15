@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PrLUxEvVUQlTA3D02Z1q9JziXDFi3TDVx1j5NpS6cKg=",
+  "Source": "TrainingService",
+  "BasePath": "_content/TrainingService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

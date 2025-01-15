@@ -1,0 +1,97 @@
+[
+  {
+    "ContainingType": "TrainingService.Controllers.TraineesController",
+    "Method": "AddTrainee",
+    "RelativePath": "api/Trainees",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trainee",
+        "Type": "TrainingService.Models.Trainee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingService.Controllers.TraineesController",
+    "Method": "GetTraineeWithTrainings",
+    "RelativePath": "api/Trainees/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingService.Controllers.TraineesController",
+    "Method": "AddTrainingAssociation",
+    "RelativePath": "api/Trainees/{traineeId}/associate-training/{trainingId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "traineeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "trainingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingService.Controllers.TraineesController",
+    "Method": "GetTraineesWithTrainings",
+    "RelativePath": "api/Trainees/with-trainings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingService.Controllers.TrainingController",
+    "Method": "AddTraining",
+    "RelativePath": "api/Training",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "training",
+        "Type": "TrainingService.Models.Training",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingService.Controllers.TrainingController",
+    "Method": "GetTraining",
+    "RelativePath": "api/Training/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

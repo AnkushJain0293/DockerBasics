@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  web:
+    image: jaiankush0293/web-service
+    build:
+      context: ./TrainingService
+    ports:
+      - "5215:5215"
+      - "8080:8080"
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=database;Database=TrainingDb;Username=postgres;Password=postgres_password
+      - Redis__Host=cache:6379
+    depends_on:
+      - database
+      - cache
+    networks:
+      - app-network
+
+  database:
+    image: jainankush0293/database
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_password
+      POSTGRES_DB: TrainingDb
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+
+  cache:
+    image: jainankush0293/cache
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+      
+networks:
+  app-network:
+    driver: bridge
